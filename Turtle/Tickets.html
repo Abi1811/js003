@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Tickets</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cover">
+    <!-- <a href="hikkaduwa.html">Home</a> -->
+    <h1>Buy Tickets</h1>
+  </div>
+  <div class="container">
+    <!-- <h1 class="heading">Buy Tickets</h1> -->
+    
+    <div class="tickets-container">
+      <h2 class="section-heading">Dates</h2>
+      <input type="date" id="date-picker">
+      <h2 class="section-heading">Guests</h2>
+      <div class="guests">
+
+
+        <!-- Guests input fields go here -->
+        <label for="sl-adult">SL Adult:</label>
+        <input type="number" id="sl-adult" min="0" value="0">&nbsp;
+
+        <label for="sl-child">SL Child:</label>
+        <input type="number" id="sl-child" min="0" value="0">&nbsp;
+
+        <label for="foreigner-adult">Foreigner Adult:</label>
+        <input type="number" id="foreigner-adult" min="0" value="0">&nbsp;
+
+        <label for="foreigner-child">Foreigner Child:</label>
+        <input type="number" id="foreigner-child" min="0" value="0">&nbsp;
+
+        <label for="infant">Infant:</label>
+        <input type="number" id="infant" min="0" value="0">&nbsp;
+
+      </div>
+      <h2 class="section-heading">Pricing</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Guest Category</th>
+            <th>Normal Hour Charge</th>
+            <th>Peak Hour Charge</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SL Adult</td>
+            <td>$4</td>
+            <td>$6</td>
+          </tr>
+          <tr>
+            <td>SL Child</td>
+            <td>$2</td>
+            <td>$3</td>
+          </tr>
+          <tr>
+            <td>Foreigner Adult</td>
+            <td>$10</td>
+            <td>$13</td>
+          </tr>
+          <tr>
+            <td>Foreigner Child</td>
+            <td>$5</td>
+            <td>$8</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- ... (rest of the container remains unchanged) ... -->
+    </div>
+  </div>
+      <h2 class="section-heading">Duration</h2>
+      <select id="time-slot">
+        <!-- Time slot options go here -->
+        <option value="" data-peak="false"></option>
+      </select>
+      <h2 class="section-heading">Summary table</h2>
+      <table id="summary-table" class="table table-bordered mt-3">
+        <!-- Summary table content will be added dynamically with JavaScript -->
+      </table>
+     
+     <div>
+        <button onclick="redirectToPage() " style="background-color: #26081C; margin-left: 45%;">Continue with purchase</button>
+      
+      <script>
+        function redirectToPage() {
+          window.location.href = "cpurchase.html";
+        }
+      </script>
+       </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="tickets.js"></script>
+</body>
+</html>

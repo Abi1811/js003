@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EBF5DF;
+    justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .cover {
+    background-color: #380036;
+    padding: 20px;
+    color: whitesmoke;
+    
+  }
+  
+  .tickets-container {
+    margin-top: 20px;
+  }
+  
+  .section-heading {
+    margin-top: 20px;
+  }
+  
+  .guests {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .category {
+    width: 150px;
+    margin: 10px;
+  }
+  
+  #time-slot {
+    width: 100%;
+  }
+  
+  table {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  
+  /* Add Bootstrap classes for responsive design */
+  @media (max-width: 576px) {
+    .category {
+      width: 100%;
+    }
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  select {
+    width: 40%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #38cef0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1eb6d9;
+  }
+  
+  #error-message {
+    display: none;
+    color: red;
+    margin-top: 10px;
+  }
+  
+  #summary {
+    margin-top: 20px;
+  }
+  
+  #summary-table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: 15%;
+    border-radius: 10px;
+  }
+  
+  #summary-table th, #summary-table td {
+    padding: 10px;
+    border: 1px solid black;
+  }
+  a{
+    color: whitesmoke;
+  }
+  
+  @media screen and (max-width: 480px) {
+    input, select {
+      width: 100%;
+    }
+  }
+  

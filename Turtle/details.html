@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="styles.css">
+  <script src="details.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+</head>
+
+<body>
+  <!-- Same heading and cover photo as "Tickets" page -->
+  <h1>Buy Tickets</h1>
+  <div><!-- Cover photo goes here --></div>
+
+  <h2>Enter your details</h2>
+
+  </form>
+  <div>
+    <div>
+  <form  id="details-form"  onsubmit="return validateForm(event)">
+    <div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <span id="fullNameError" class="error-message"></span><br>
+      </div>
+
+    <div>
+        <label for="mobileNumber">Mobile Number:</label>
+        <select id="country-code">
+          <!-- Options for country codes and flags go here -->
+        </select>
+        <input type="tel" id="mobileNumber" required>
+        <span id="mobileNumberError" class="error-message"></span><br>
+    </div>
+
+    <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      <span id="emailError" class="error-message"></span><br>
+
+      <label for="confirm-email">Confirm Email:</label>
+      <input type="email" id="confirm-email" name="confirm-email" required><br>
+      <span id="confirmEmailError" class="error-message"></span><br>
+
+    <div>
+        <label for="gender">Gender:</label>
+        <select id="gender">
+          <option value="">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <span id="genderError" class="error-message"></span><br>
+      </div>
+  </form>
+  <!-- <p id="error-message" style="display: none; color: red;">Please fill in all required fields correctly.</p> -->
+
+</div>
+
+    <button id="continue-btn" onclick="redirectToPage()" style="background-color: rgb(56, 206, 240);">Continue with purchase</button>
+  </div>
+  
+  <script>
+    function redirectToPage() {
+      window.location.href = "payment.html";
+    }
+  </script>
+  
+  <div id="summary">
+    <table id="summary-table">
+      <!-- Summary table content goes here (loaded from local storage) -->
+    </table>
+  </div>
+  
+ 
+  <script src="details.js"></script>
+</body>
+
+</html>
